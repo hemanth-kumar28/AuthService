@@ -1,0 +1,36 @@
+# ─── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.so
+
+# ─── Environment / Secrets (CRITICAL) ─────────────────────────
+.env
+.env.local
+.env.production
+# Keep .env.example — it has no real secrets
+
+# ─── Virtual Environment ──────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ─── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Testing ──────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ─── Docker Volumes ───────────────────────────────────────────
+pgdata/
