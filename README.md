@@ -97,7 +97,7 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5431/auth_service_db
 JWT_SECRET_KEY=<generate-a-strong-random-key>
 ```
 
-> ⚠️ **Never commit `.env` to version control.** Use `.env.example` as a reference.
+
 
 **Generate a secure JWT secret:**
 ```bash
