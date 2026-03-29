@@ -1,10 +1,10 @@
-# 🔐 AuthService — Production-Grade CRUD & Auth API
+#  AuthService — Production-Grade CRUD & Auth API
 
 A secure, production-ready backend API built with **FastAPI** and **PostgreSQL** featuring JWT-based authentication, full CRUD operations on user-owned resources, and clean modular architecture.
 
 ---
 
-## ✨ Features
+## Features
 
 - **JWT Authentication** — Access + refresh token rotation
 - **Full CRUD** — Notes with tag support (many-to-many)
@@ -17,7 +17,7 @@ A secure, production-ready backend API built with **FastAPI** and **PostgreSQL**
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -33,7 +33,7 @@ A secure, production-ready backend API built with **FastAPI** and **PostgreSQL**
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 app/
@@ -69,7 +69,7 @@ app/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -189,7 +189,7 @@ uvicorn app.main:app --reload --port 8000
 
 ---
 
-## 📦 Request / Response Format
+##  Request / Response Format
 
 ### Success Response
 
@@ -215,7 +215,7 @@ uvicorn app.main:app --reload --port 8000
 
 ---
 
-## 🔒 Validation Rules
+##  Validation Rules
 
 ### Password
 - Minimum 8 characters, maximum 128
@@ -234,7 +234,7 @@ uvicorn app.main:app --reload --port 8000
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 pytest tests/ -v
@@ -243,12 +243,12 @@ pytest tests/ -v
 Tests run against a separate PostgreSQL database (`auth_service_test_db`) with table truncation between tests for full isolation.
 
 ```
-42 passed ✅
+42 passed 
 ```
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 ```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
@@ -277,7 +277,7 @@ Tests run against a separate PostgreSQL database (`auth_service_test_db`) with t
 
 ---
 
-## 🔐 Security Considerations
+## Security Considerations
 
 - Passwords are hashed with **bcrypt** — never stored in plaintext
 - JWT tokens include expiry and type claims
@@ -285,11 +285,10 @@ Tests run against a separate PostgreSQL database (`auth_service_test_db`) with t
 - All routes enforce **ownership checks** — no horizontal privilege escalation
 - Input validated via **Pydantic** — prevents injection
 - Database queries use **SQLAlchemy ORM** — no raw SQL injection risk
-- `.env` is **gitignored** — secrets never committed
 - Internal errors are **never exposed** to clients
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
